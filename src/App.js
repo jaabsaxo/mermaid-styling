@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+import Mermaid from "./Mermaid";
+import SequenceExample from "./SequenceExample";
+import RefreshExample from "./RefreshExample";
 import './App.css';
+import ClassExample from "./ClassExample";
+import StateExample from "./StateExample";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Mermaid chart={SequenceExample} />
+        <br>
+        </br>
+        <Mermaid chart={RefreshExample} />
+        <br>
+        </br>
+        <Mermaid chart={ClassExample} />
       </header>
     </div>
   );
